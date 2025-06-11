@@ -1,15 +1,3 @@
-local Global = (getgenv and getgenv()) or shared
-if game:GetService("Players").LocalPlayer.Character.Name ~= "Reanimate" then
-	error("Not Reanimated")
-end
-if game:FindFirstChildOfClass("TestService"):FindFirstChild("ScriptCheck") then
-	error("Script Running")
-end
-local getsynasset = getsynasset or getcustomasset or function() warn("no getcustomasset/getsynasset") end
-local Events = Global.TableOfEvents
-Global.AntiScript()
-Global.GetLoadLibrary()
-
 Player=game:GetService("Players").LocalPlayer
 Character=Player.Character
 Character.Humanoid.Name = "gattaizamasu"
