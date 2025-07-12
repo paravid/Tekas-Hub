@@ -3,25 +3,7 @@
 -- Script By: 123jl123	 --
 --\                     /--
 ---------------------------
---local remote = NS ([=[
-local TweenService = game:GetService("TweenService")
-local RbxUtility = require(script.RbxUtility)
-local Create = RbxUtility.Create
-local Player = game.Players:FindFirstChild(script.Parent.Parent.Name)
-local Mouse,mouse,UserInputService,ContextActionService
-do
-	script.Parent = Player.Character
-	local CAS = {Actions={}}
-	local Event = Instance.new("RemoteEvent")
-	Event.Name = "UserInput_Event"
-	Event.Parent = Player.Character
-	local fakeEvent = function()
-		local t = {_fakeEvent=true}
-		t.Connect = function(self,f)self.Function=f end
-		t.connect = t.Connect
-		return t
-	end
-end 
+
 EffectPack = script.Extras:Clone()
 script.Extras:Destroy()
 ZTfade=false 
